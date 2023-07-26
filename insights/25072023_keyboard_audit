@@ -1,0 +1,62 @@
+# Accessibility Audit – Keyboard Navigability
+- 🗓️ **Date:** 25 July 2023
+- 🙋‍♂️ **Facilitator:** [Peter Quigley](https://www.linkedin.com/in/peterlquigley/) 
+- 📃 **Format**: [FigJam](https://www.figma.com/file/w9ZhB3rz3dXaxTX5h1CcPA/Keyboard-Navigability-Audit?type=whiteboard&node-id=0%3A1&t=eqqHSCHBFdSVPyan-1)
+
+🔴 — severe (having a critical impact on the customer experience, immediate action required)
+🟠 — important (having a serious impact on the customer experience)
+🟡 — improvement (an area for improvement or a minor fix)
+
+## Executive summary
+Overall keyboard navigability for Formbricks is very good, even when drilled into site subsections. There are no navigability issues that critically harm the user experience; almost all items address elements excluded from focusability via the Tab/Shift+Tab cycle.
+The below audit items were generated on the basis of a user navigating Formbricks exclusively with keyboard commands (as recommended by the [UK Home Office guide to keyboard accessibility](https://design.homeoffice.gov.uk/accessibility/forms/keyboard)).
+
+- The Tab key should advance to the next focusable element. Shift+Tab should recede to the previous focusable element.
+- The Enter key should submit forms, activate buttons, confirm selections, etc.
+- The arrow keys should allow for navigation within lists, drop-downs, and selected elements.
+- The Esc key should close dialogs and pop-ups, and should generally cancel the active action.
+
+For more details, visit the [FigJam page](https://www.figma.com/file/w9ZhB3rz3dXaxTX5h1CcPA/Keyboard-Navigability-Audit?type=whiteboard&node-id=0%3A1&t=eqqHSCHBFdSVPyan-1) here.
+
+## Homepage & Navigation
+![Homepage image](https://github.com/formbricks/design/assets/94018985/53863fd7-cac4-4805-a240-f4175d862c9a)
+
+- [ ] 1. 🟠Profile dropdown should be focusable by tabbing over to it (currently tab skips straight through to the page content).
+- [ ] 2. 🟠"…" drop-downs are not selectable via key commands. These elements should be tab-focusable.
+
+## Actions & Attributes
+![Actions & Attributes image](https://github.com/formbricks/design/assets/94018985/d9602980-275a-4ae6-a311-ff0c15800fa1)
+- [ ] 3. 🟡**Actions > User Actions** - The pop-up fields for each preset action are not keyboard navigable. Tab-focusing should be enabled for the tabs and fillable fields in these windows.
+- [ ] 4. 🟡**Attributes > Name** - Same as above for the existing name pop-ups here.
+
+## Settings
+![Settings image](https://github.com/formbricks/design/assets/94018985/99a47925-fe84-409c-b3a5-9ded357a7d4f)
+- [ ] 5. 🟠"…"Skip links should be added to each secondary link subsection so that users don't have to tab through every secondary link before navigating the page subsection.
+- [ ] 6. 🟡**Profile** - Email field should be tab-focusable.
+- [ ] 7. 🟡**Profile** - Avatar section should be tab-focusable.
+- [ ] 8. 🟡**Look & Feel** - Color picker widget should be tab-focusable. It should also be navigable with arrow-keys once opened.
+- [ ] 9. 🟡**Setup Checklist** - "Set up Development environment?" hyperlink should be tab-focusable.
+- [ ] 8. 🟡**Setup Checklist > NPM/HTML Tabs** - Code snippet Copy button should be tab-focusable.
+
+## Survey Creation
+![Survey Creation image](https://github.com/formbricks/design/assets/94018985/69d63121-5999-4ccb-a51c-a43c0a546b1d)
+- [ ] 11. 🟠Each question has several buttons (Next Question/Previous Question/Copy Question/Delete Question) in the top-right that aren't focusable via key commands. Tab should cycle through these buttons.
+- [ ] 12. 🟠The Delete button and Add Option button (+) next to every free-text field should be tab-focusable (currently they are not).
+- [ ] 13. 🟡Focus state for "Add Logic" button should show tooltip descriptor.
+- [ ] 14. 🟠When tabbing to an existing, unselected question, you're not able to open the question menu with key commands. After focusing on it with Tab, you should be able to push the question menu open with the Enter key.
+- [ ] 15. 🟠Add Question CTA is not focusable via the Tab key.
+- [ ] 16. 🟡Selecting a Call-to-Action type or Terms and Conditions type question resets your current Tab navigation spot to the top of the page instead of setting it to the next contained focusable element, like other question types.
+- [ ] 17. 🟡In Rating-type questions, focusing on the drop-downs via Tab isn't indicated via a focus state even though it's added. Create a more prominent focus state for these elements.
+- [ ] 18. 🟡**Preview window** - Rating scale should be Tab-focusable, and its suboptions should be focusable via arrow keys.
+- [ ] 19. 🟡**Preview window** - Radio buttons should be Tab-focusable.
+- [ ] 20. 🟡**Preview window** - Checkboxes should be Tab-focusable.
+- [ ] 21. 🟡Settings sections should be Tab-focusable (currently only the sub-elements are Tab-focusable). Sub-elements should then me made focusable via the arrow keys.
+- [ ] 22. 🟡When Tab-focusing on sub-elements currently, you can't get back out to the primary links with Shift+Tab, you have to Tab all the way through to the primary links at the beginning of the page.
+
+## Responses
+![Responses image](https://github.com/formbricks/design/assets/94018985/97c32a0c-cfbd-4d82-bf6c-575862fcd2a4)
+- [ ] 23. 🟡**Filters** - When creating a new filter, the question type selector drop-down isn't openable via the key commands. Arrow keys should open the drop-down in this instance (since Enter key is expected to perform a search).
+- [ ] 24. 🟡**Filters** - After selecting a question type, the subsequent fields are not openable via key commands, nor is the Delete button for the filter line you created.
+- [ ] 25. 🟡Downloads drop-down should be Tab-focusable.
+- [ ] 26. 🟠**Responses tab** - Note button for a single response is not focusable via key commands. Tab should pull you to the + button here.
+- [ ] 27. 🟡**Responses tab** - After creating a Note, you can't select the delete (-) key via Tab or Shift+Tab. It should be Tab-focusable.
